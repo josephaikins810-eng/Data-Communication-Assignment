@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Communication Assignment | Security</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="site-title">Data Communication <span>Assignment</span></p>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="topics.html">Topics</a></li>
+          <li><a href="telegraph.html">Telegraph</a></li>
+          <li><a href="security.html" class="active">Security</a></li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </nav>
+      <nav class="page-subnav" aria-label="Security page sections">
+        <ul>
+          <li><a href="#cia-triad">CIA Triad</a></li>
+          <li><a href="#cryptography">Cryptography</a></li>
+          <li><a href="#data-security">Data Security</a></li>
+          <li><a href="#network-security">Network Security</a></li>
+          <li><a href="#cybersecurity">Cybersecurity</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section id="page-intro" class="page-hero">
+      <h1 class="section-title">Security &amp; Cryptography</h1>
+      <p class="hero-text">
+        Topics 7 and 8 — protecting information in transit and at rest.
+        Summary by <strong>AMO AIKINS JOSEPH</strong> (PUIT/24210041).
+      </p>
+    </section>
+
+    <!-- 7. CIA Triad -->
+    <section id="cia-triad">
+      <h2 class="section-title"><span class="topic-num">7</span> The CIA Triad</h2>
+      <div class="card">
+        <p>
+          Information security is often explained using three core goals known as the
+          <strong>CIA triad</strong> (Confidentiality, Integrity, Availability). Every security
+          control should support one or more of these principles.
+        </p>
+
+        <div class="cia-grid">
+          <article class="cia-card cia-c">
+            <h3>C — Confidentiality</h3>
+            <p>Only authorized people can read the data. Prevents eavesdropping and leaks.</p>
+            <ul>
+              <li>Encryption (TLS, VPN)</li>
+              <li>Access control &amp; passwords</li>
+              <li>Classification labels</li>
+            </ul>
+          </article>
+          <article class="cia-card cia-i">
+            <h3>I — Integrity</h3>
+            <p>Data is accurate and unaltered in transit or storage. Detects tampering.</p>
+            <ul>
+              <li>Hash functions (SHA-256)</li>
+              <li>Digital signatures</li>
+              <li>Checksums &amp; MACs</li>
+            </ul>
+          </article>
+          <article class="cia-card cia-a">
+            <h3>A — Availability</h3>
+            <p>Systems and data are accessible when needed. Resists outages and attacks.</p>
+            <ul>
+              <li>Backups &amp; redundancy</li>
+              <li>DDoS mitigation</li>
+              <li>Disaster recovery plans</li>
+            </ul>
+          </article>
+        </div>
+
+        <figure class="diagram cia-diagram" aria-label="CIA triad relationship">
+          <figcaption>The CIA Triad — three pillars of information security</figcaption>
+          <div class="cia-triangle">
+            <div class="cia-node top">Confidentiality</div>
+            <div class="cia-node left">Integrity</div>
+            <div class="cia-node right">Availability</div>
+            <div class="cia-center">Secure<br>System</div>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Cryptography -->
+    <section id="cryptography">
+      <h2 class="section-title"><span class="topic-num">7</span> Cryptography</h2>
+      <div class="card">
+        <p>
+          <strong>Cryptography</strong> uses mathematics to transform data so only intended
+          parties can read it or prove it has not been changed. It is the main tool for
+          confidentiality and integrity on networks.
+        </p>
+
+        <h3 class="card-subtitle">Types of cryptography</h3>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Keys</th>
+              <th>Examples</th>
+              <th>Use</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Symmetric</td>
+              <td>One shared secret key</td>
+              <td>AES, ChaCha20</td>
+              <td>Fast bulk encryption (Wi-Fi, disk encryption)</td>
+            </tr>
+            <tr>
+              <td>Asymmetric</td>
+              <td>Public + private key pair</td>
+              <td>RSA, ECC</td>
+              <td>Key exchange, digital signatures, HTTPS handshakes</td>
+            </tr>
+            <tr>
+              <td>Hashing</td>
+              <td>No key (one-way)</td>
+              <td>SHA-256, bcrypt</td>
+              <td>Integrity checks, password storage (with salt)</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3 class="card-subtitle">Common terms</h3>
+        <ul class="key-list">
+          <li><strong>Plaintext</strong> — readable message before encryption</li>
+          <li><strong>Ciphertext</strong> — scrambled output after encryption</li>
+          <li><strong>Key</strong> — secret value used to encrypt/decrypt or sign</li>
+          <li><strong>Certificate (TLS)</strong> — binds a public key to a domain identity</li>
+          <li><strong>End-to-end encryption</strong> — only sender and receiver hold keys (e.g. Signal)</li>
+        </ul>
+
+        <div class="info-grid">
+          <div class="info-box">
+            <strong>Encryption at rest</strong>
+            <p>Protects files on disk or in databases if hardware is stolen.</p>
+          </div>
+          <div class="info-box">
+            <strong>Encryption in transit</strong>
+            <p>HTTPS, TLS on email and VPNs — protects data on the wire.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Data Security -->
+    <section id="data-security">
+      <h2 class="section-title"><span class="topic-num">8</span> Data Security</h2>
+      <div class="card">
+        <p>
+          <strong>Data security</strong> focuses on protecting digital information throughout
+          its lifecycle: creation, storage, use, sharing, archival, and destruction.
+        </p>
+        <h3 class="card-subtitle">Key practices</h3>
+        <ul class="key-list">
+          <li><strong>Classification</strong> — label data as public, internal, confidential, or restricted</li>
+          <li><strong>Least privilege</strong> — users get only the access they need</li>
+          <li><strong>Data masking / anonymization</strong> — hide identities in analytics</li>
+          <li><strong>Secure deletion</strong> — wipe or destroy media when data is no longer needed</li>
+          <li><strong>Compliance</strong> — laws and policies (e.g. GDPR-style privacy, organizational policy)</li>
+        </ul>
+        <p>
+          Data breaches often expose personal records, financial details, or credentials. Strong
+          encryption, monitoring, and employee training reduce risk.
+        </p>
+      </div>
+    </section>
+
+    <!-- Network Security -->
+    <section id="network-security">
+      <h2 class="section-title"><span class="topic-num">8</span> Network Security</h2>
+      <div class="card">
+        <p>
+          <strong>Network security</strong> protects the infrastructure that moves data—routers,
+          switches, firewalls, wireless access points, and the traffic between them.
+        </p>
+        <h3 class="card-subtitle">Controls &amp; technologies</h3>
+        <ul class="key-list">
+          <li><strong>Firewall</strong> — filters traffic by rules (allow/deny ports and IPs)</li>
+          <li><strong>IDS / IPS</strong> — detect or block suspicious patterns (intrusion detection/prevention)</li>
+          <li><strong>VPN</strong> — encrypted tunnel for remote access over public networks</li>
+          <li><strong>Network segmentation</strong> — separate guest Wi-Fi from internal servers (VLANs)</li>
+          <li><strong>802.1X / WPA3</strong> — authenticate users and encrypt wireless LAN traffic</li>
+          <li><strong>Patch management</strong> — update firmware and OS to close known vulnerabilities</li>
+        </ul>
+        <h3 class="card-subtitle">Common threats on networks</h3>
+        <div class="info-grid">
+          <div class="info-box">
+            <strong>Sniffing</strong>
+            <p>Capturing packets on unencrypted links (mitigated by TLS/VPN).</p>
+          </div>
+          <div class="info-box">
+            <strong>Man-in-the-middle</strong>
+            <p>Attacker relays traffic between two parties; certificates help detect this.</p>
+          </div>
+          <div class="info-box">
+            <strong>DDoS</strong>
+            <p>Flood of traffic aimed at making a service unavailable.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cybersecurity -->
+    <section id="cybersecurity">
+      <h2 class="section-title"><span class="topic-num">8</span> Cybersecurity</h2>
+      <div class="card">
+        <p>
+          <strong>Cybersecurity</strong> is the broader practice of defending computers, networks,
+          programs, and data from digital attack, damage, and unauthorized access. It combines
+          data security, network security, and organizational processes.
+        </p>
+        <h3 class="card-subtitle">Domains of cybersecurity</h3>
+        <ul class="key-list">
+          <li><strong>Application security</strong> — secure coding, testing, updates for web and mobile apps</li>
+          <li><strong>Endpoint security</strong> — antivirus, EDR on laptops and phones</li>
+          <li><strong>Identity &amp; access</strong> — MFA, SSO, role-based access control</li>
+          <li><strong>Cloud security</strong> — shared responsibility between provider and customer</li>
+          <li><strong>Human factor</strong> — phishing awareness, social engineering defense</li>
+        </ul>
+        <h3 class="card-subtitle">Defense in depth</h3>
+        <p>
+          No single tool stops every attack. <strong>Defense in depth</strong> layers multiple
+          controls: firewall + encryption + MFA + backups + incident response plan. If one layer
+          fails, others still protect assets.
+        </p>
+        <h3 class="card-subtitle">Quick comparison</h3>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Focus</th>
+              <th>Primary concern</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Data security</td>
+              <td>The information itself (content, privacy, lifecycle)</td>
+            </tr>
+            <tr>
+              <td>Network security</td>
+              <td>Paths and devices that carry data (perimeter, traffic)</td>
+            </tr>
+            <tr>
+              <td>Cybersecurity</td>
+              <td>Entire digital environment (people, process, technology)</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="topic-footer-note">
+          Practice secure habits: strong passwords, MFA, software updates, and caution with
+          unknown links. See <a href="resources.html">Resources</a> for assignment links and videos.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Data Communication Assignment &copy; 2026 &mdash; AMO AIKINS JOSEPH (PUIT/24210041)</p>
+    <p style="margin-top: 0.5rem;">
+      <a href="resources.html">Resources</a> &middot;
+      <a href="https://github.com/josephaikins810-eng/data-communication" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+    </p>
+  </footer>
+
+</body>
+</html>

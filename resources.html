@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Communication Assignment | Resources</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="site-title">Data Communication <span>Assignment</span></p>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="topics.html">Topics</a></li>
+          <li><a href="telegraph.html">Telegraph</a></li>
+          <li><a href="security.html">Security</a></li>
+          <li><a href="resources.html" class="active">Resources</a></li>
+        </ul>
+      </nav>
+      <nav class="page-subnav" aria-label="Resources page sections">
+        <ul>
+          <li><a href="#assignment">Assignment</a></li>
+          <li><a href="#links">Links</a></li>
+          <li><a href="#video">Video</a></li>
+          <li><a href="#github">GitHub</a></li>
+          <li><a href="#one-million-coders">1M Coders</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section id="page-intro" class="page-hero">
+      <h1 class="section-title">Resources &amp; Links</h1>
+      <p class="hero-text">
+        Assignment files, external tools, video, and repository links for
+        <strong>AMO AIKINS JOSEPH</strong> (PUIT/24210041).
+      </p>
+    </section>
+
+    <!-- Assignment (Link1 - opens new tab) -->
+    <section id="assignment">
+      <h2 class="section-title">Assignment</h2>
+      <div class="card">
+        <p>
+          This web project is submitted as the <strong>Data Communication assignment</strong>.
+          Open the full assignment PDF in a new browser tab, or view it in the same tab below.
+        </p>
+        <div class="link-actions">
+          <a
+            href="assignments/data-communication-assignment.pdf"
+            class="btn btn-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open Assignment (new tab)
+          </a>
+          <a
+            href="assignments/data-communication-assignment.pdf"
+            class="btn btn-secondary"
+          >
+            View Assignment (same tab)
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- External resources: Turnitin + more (Link2) -->
+    <section id="links">
+      <h2 class="section-title">External Resources</h2>
+      <div class="card">
+        <p>Required and useful links for submission and study:</p>
+        <ul class="resource-link-list">
+          <li>
+            <span class="link-label">Link 1 — Assignment (new tab)</span>
+            <a
+              href="assignments/data-communication-assignment.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Data Communication Assignment Document
+            </a>
+          </li>
+          
+          <li>
+            <span class="link-label">Link 2 — GitHub Repository</span>
+            <a
+              href="https://github.com/josephaikins810-eng/data-communication"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              github.com/josephaikins810-eng/data-communication
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+<!-- One Million Coders -->
+<section id="one-million-coders">
+  <h2 class="section-title">One Million Coders</h2>
+  <div class="card">
+    <p>
+      As part of developing this assignment, I am building web development skills through
+      the <strong>One Million Coders</strong> initiative — Egypt's national program for
+      digital skills training.
+    </p>
+    <a
+      href="https://www.onemillioncoders.gov.eg/"
+      class="btn btn-primary"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Sign up for Web Development — One Million Coders
+    </a>
+    <p class="link-note" style="margin-top: 1rem;">
+      Register on the official portal, choose a web development track, and continue
+      learning alongside this Data Communication project.
+    </p>
+  </div>
+</section>
+
+    <!-- YouTube embedded in page (plays inside this tab) -->
+    <section id="video">
+      <h2 class="section-title">Learning Video</h2>
+      <div class="card">
+        <p>
+          <strong>OSI Model Explained</strong> — plays inside this page (embedded player below).
+        </p>
+        <p id="video-local-tip" class="video-warning" hidden>
+          <strong>Video blocked on local files.</strong>
+          Double-click <code>start-server.bat</code> in your project folder, then open
+          <a href="http://localhost:5500/resources.html#video">http://localhost:5500/resources.html#video</a>
+          — or use <strong>Live Server</strong> on this file in Cursor.
+        </p>
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/vv4y_uOneC0?rel=0"
+            title="OSI Model Explained | Data Communication"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
+        </div>
+        <p class="link-note">
+          Source:
+          <a href="https://www.youtube.com/watch?v=vv4y_uOneC0" target="_blank" rel="noopener noreferrer">
+            Watch on YouTube (new tab)
+          </a>
+        </p>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Data Communication Assignment &copy; 2026 &mdash; AMO AIKINS JOSEPH (PUIT/24210041)</p>
+    <p style="margin-top: 0.5rem;">
+      <a href="https://github.com/josephaikins810-eng/data-communication" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+    </p>
+  </footer>
+
+  <script>
+    if (window.location.protocol === "file:") {
+      var tip = document.getElementById("video-local-tip");
+      if (tip) tip.hidden = false;
+    }
+  </script>
+</body>
+</html>

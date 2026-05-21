@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Communication Assignment | Telegraph &amp; Morse</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="site-title">Data Communication <span>Assignment</span></p>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="topics.html">Topics</a></li>
+          <li><a href="telegraph.html" class="active">Telegraph</a></li>
+          <li><a href="security.html">Security</a></li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </nav>
+      <nav class="page-subnav" aria-label="Telegraph page sections">
+        <ul>
+          <li><a href="#history">History</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#diagram">Diagram</a></li>
+          <li><a href="#morse-code">Morse Code</a></li>
+          <li><a href="#legacy">Legacy</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section id="page-intro" class="page-hero">
+      <h1 class="section-title">Telegraph &amp; Morse Code</h1>
+      <p class="hero-text">
+        Topic 9 — How the first electrical long-distance messaging system worked, and how
+        dots and dashes became a universal encoding scheme. By <strong>AMO AIKINS JOSEPH</strong>.
+      </p>
+    </section>
+
+    <!-- History -->
+    <section id="history">
+      <h2 class="section-title"><span class="topic-num">9</span> History of the Telegraph</h2>
+      <div class="card">
+        <p>
+          The <strong>electric telegraph</strong> (1830s–1840s) was one of the first technologies
+          to send information faster than a horse or ship. Samuel F.B. Morse, Alfred Vail, and
+          others developed a practical system using a single wire and a binary-like code.
+        </p>
+        <ul class="key-list">
+          <li><strong>1844</strong> — First official Morse message in the U.S.: “What hath God wrought” (Washington to Baltimore)</li>
+          <li><strong>Undersea cables</strong> — Later connected continents (e.g. transatlantic cable, 1866)</li>
+          <li><strong>Impact</strong> — News, railways, military orders, and commerce could coordinate across distance</li>
+        </ul>
+        <p>
+          The telegraph is a foundation of <strong>data communication</strong>: it encodes text,
+          transmits symbols over a medium, and decodes them at the receiver—the same pattern
+          used by modern digital networks.
+        </p>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how-it-works">
+      <h2 class="section-title">How the Telegraph Works</h2>
+      <div class="card">
+        <p>
+          A basic telegraph circuit is a <strong>closed loop</strong> of wire connecting a
+          sender’s key, a battery, and a receiver’s electromagnetic sounder (or relay).
+        </p>
+        <ol class="key-list ordered-list">
+          <li>Operator presses the <strong>key</strong> → electrical current flows through the line.</li>
+          <li>Current energizes the <strong>sounder</strong> at the far end → audible click.</li>
+          <li>Short press = <strong>dot</strong> (·); longer press = <strong>dash</strong> (−).</li>
+          <li>Patterns of dots and dashes represent letters and numbers (Morse code).</li>
+          <li>Skilled operators could send and read 20–40 words per minute.</li>
+        </ol>
+        <div class="info-grid">
+          <div class="info-box">
+            <strong>Circuit ON</strong>
+            <p>Current flows → receiver clicks (mark).</p>
+          </div>
+          <div class="info-box">
+            <strong>Circuit OFF</strong>
+            <p>No current → silence between symbols (space).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Telegraph diagram -->
+    <section id="diagram">
+      <h2 class="section-title">Diagram of a Telegraph</h2>
+      <div class="card diagram-card">
+        <p>
+          The diagram below shows a <strong>simple one-wire telegraph circuit</strong>: sender
+          (key + battery), transmission line, and receiver (sounder with ground). This is the
+          classic loop used to teach early data communication.
+        </p>
+        <figure class="telegraph-figure">
+          <img
+            src="assets/images/telegraph-diagram.jpg"
+            alt="Diagram of electric telegraph: key, battery, electromagnets, and paper tape recording Morse code dots and dashes"
+            class="telegraph-diagram-img"
+            width="800"
+            height="450"
+          >
+          <figcaption>
+            Figure 1 — Simple electric telegraph: key closes the circuit; current activates the distant sounder.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Morse code -->
+    <section id="morse-code">
+      <h2 class="section-title">Morse Code</h2>
+      <div class="card">
+        <p>
+          <strong>Morse code</strong> maps each character to a unique sequence of dots (·) and
+          dashes (−). Timing rules matter: short gap between parts of a letter, longer gap
+          between letters, and longer still between words.
+        </p>
+        <h3 class="card-subtitle">International Morse — sample alphabet</h3>
+        <div class="morse-table-wrap">
+          <table class="data-table morse-table">
+            <thead>
+              <tr>
+                <th>Letter</th>
+                <th>Morse</th>
+                <th>Letter</th>
+                <th>Morse</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>A</td><td class="morse-cell">· −</td><td>N</td><td class="morse-cell">− ·</td></tr>
+              <tr><td>B</td><td class="morse-cell">− · · ·</td><td>O</td><td class="morse-cell">− − −</td></tr>
+              <tr><td>C</td><td class="morse-cell">− · − ·</td><td>P</td><td class="morse-cell">· − − ·</td></tr>
+              <tr><td>D</td><td class="morse-cell">− · ·</td><td>Q</td><td class="morse-cell">− − · −</td></tr>
+              <tr><td>E</td><td class="morse-cell">·</td><td>R</td><td class="morse-cell">· − ·</td></tr>
+              <tr><td>F</td><td class="morse-cell">· · − ·</td><td>S</td><td class="morse-cell">· · ·</td></tr>
+              <tr><td>G</td><td class="morse-cell">− − ·</td><td>T</td><td class="morse-cell">−</td></tr>
+              <tr><td>H</td><td class="morse-cell">· · · ·</td><td>U</td><td class="morse-cell">· · −</td></tr>
+              <tr><td>I</td><td class="morse-cell">· ·</td><td>V</td><td class="morse-cell">· · · −</td></tr>
+              <tr><td>J</td><td class="morse-cell">· − − −</td><td>W</td><td class="morse-cell">· − −</td></tr>
+              <tr><td>K</td><td class="morse-cell">− · −</td><td>X</td><td class="morse-cell">− · · −</td></tr>
+              <tr><td>L</td><td class="morse-cell">· − · ·</td><td>Y</td><td class="morse-cell">− · − −</td></tr>
+              <tr><td>M</td><td class="morse-cell">− −</td><td>Z</td><td class="morse-cell">− − · ·</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <h3 class="card-subtitle">Example message</h3>
+        <div class="morse-example">
+          <p><strong>SOS</strong> (distress signal):</p>
+          <p class="morse-display">· · · &nbsp; − − − &nbsp; · · ·</p>
+          <p style="margin-top: 0.75rem;"><strong>“SOS” in Morse</strong> — three dots, three dashes, three dots (no spaces between letters in the standard distress call).</p>
+        </div>
+        <h3 class="card-subtitle">Numbers (0–9)</h3>
+        <p class="morse-numbers">
+          0 = − − − − − &nbsp;|&nbsp; 1 = · − − − − &nbsp;|&nbsp; 2 = · · − − − &nbsp;|&nbsp;
+          3 = · · · − − &nbsp;|&nbsp; 4 = · · · · − &nbsp;|&nbsp; 5 = · · · · · &nbsp;|&nbsp;
+          6 = − · · · · &nbsp;|&nbsp; 7 = − − · · · &nbsp;|&nbsp; 8 = − − − · · &nbsp;|&nbsp; 9 = − − − − ·
+        </p>
+      </div>
+    </section>
+
+    <!-- Legacy -->
+    <section id="legacy">
+      <h2 class="section-title">From Telegraph to Digital</h2>
+      <div class="card">
+        <p>
+          Morse code and telegraphy introduced ideas still used in modern systems:
+        </p>
+        <ul class="key-list">
+          <li><strong>Encoding</strong> — symbols represent data (today: ASCII, Unicode, binary)</li>
+          <li><strong>Modulation</strong> — turning key presses into on/off signals (today: digital line codes)</li>
+          <li><strong>Multiplexing</strong> — multiple messages on one wire (today: packet switching)</li>
+          <li><strong>Human + machine readability</strong> — SOS is still recognized worldwide</li>
+        </ul>
+        <p class="topic-footer-note">
+          Related topics: <a href="topics.html#signals">Signals</a> and
+          <a href="topics.html#intro">Introduction to Data Communication</a>.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Data Communication Assignment &copy; 2026 &mdash; AMO AIKINS JOSEPH (PUIT/24210041)</p>
+    <p style="margin-top: 0.5rem;">
+      <a href="resources.html">Resources</a> &middot;
+      <a href="https://github.com/josephaikins810-eng/data-communication" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+    </p>
+  </footer>
+
+</body>
+</html>

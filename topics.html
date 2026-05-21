@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Communication Assignment | Topics</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="site-title">Data Communication <span>Assignment</span></p>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="topics.html" class="active">Topics</a></li>
+          <li><a href="telegraph.html">Telegraph</a></li>
+          <li><a href="security.html">Security</a></li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </nav>
+      <nav class="page-subnav" aria-label="Topics page sections">
+        <ul>
+          <li><a href="#intro">Introduction</a></li>
+          <li><a href="#networking">Networking</a></li>
+          <li><a href="#models-media">Models &amp; Media</a></li>
+          <li><a href="#satellite">Satellite</a></li>
+          <li><a href="#signals">Signals</a></li>
+          <li><a href="#wireless">Wireless</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section id="page-intro" class="page-hero">
+      <h1 class="section-title">Study Topics</h1>
+      <p class="hero-text">
+        Summaries of core Data Communication topics by
+        <strong>AMO AIKINS JOSEPH</strong> (PUIT/24210041).
+        Use the links above to jump to each section on this page.
+      </p>
+    </section>
+
+    <!-- 1. Introduction to Data Communication -->
+    <section id="intro">
+      <h2 class="section-title"><span class="topic-num">1</span> Introduction to Data Communication</h2>
+      <div class="card">
+        <p>
+          <strong>Data communication</strong> is the exchange of digital information between two or
+          more devices using a transmission medium and an agreed set of rules (protocols). The goal
+          is to move data accurately, efficiently, and in a form the receiver can understand.
+        </p>
+        <h3 class="card-subtitle">Key elements</h3>
+        <ul class="key-list">
+          <li><strong>Source &amp; destination</strong> — devices that send and receive data</li>
+          <li><strong>Message</strong> — text, numbers, audio, video, or control commands</li>
+          <li><strong>Transmission medium</strong> — cable, fiber, air (wireless), or space (satellite)</li>
+          <li><strong>Protocol</strong> — rules for format, timing, error handling, and security</li>
+        </ul>
+        <h3 class="card-subtitle">Types of communication</h3>
+        <div class="info-grid">
+          <div class="info-box">
+            <strong>Simplex</strong>
+            <p>One direction only (e.g. broadcast radio).</p>
+          </div>
+          <div class="info-box">
+            <strong>Half-duplex</strong>
+            <p>Both directions, but not at the same time (e.g. walkie-talkie).</p>
+          </div>
+          <div class="info-box">
+            <strong>Full-duplex</strong>
+            <p>Both directions simultaneously (e.g. telephone, modern Ethernet).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Networking Fundamentals -->
+    <section id="networking">
+      <h2 class="section-title"><span class="topic-num">2</span> Networking Fundamentals</h2>
+      <div class="card">
+        <p>
+          A <strong>network</strong> connects computers and devices so they can share resources and
+          data. Networks are classified by geographic scope and by how devices are linked.
+        </p>
+        <h3 class="card-subtitle">Network types (by size)</h3>
+        <ul class="key-list">
+          <li><strong>LAN</strong> (Local Area Network) — home, school, or office building</li>
+          <li><strong>MAN</strong> (Metropolitan Area Network) — city-wide</li>
+          <li><strong>WAN</strong> (Wide Area Network) — spans regions or countries; the Internet is the largest WAN</li>
+          <li><strong>PAN</strong> (Personal Area Network) — Bluetooth devices around one person</li>
+        </ul>
+        <h3 class="card-subtitle">Common components</h3>
+        <ul class="key-list">
+          <li><strong>Nodes</strong> — hosts (PCs, phones, servers) and intermediate devices (routers, switches)</li>
+          <li><strong>Links</strong> — wired or wireless connections between nodes</li>
+          <li><strong>IP addressing</strong> — unique identifiers (e.g. IPv4, IPv6) for routing packets</li>
+          <li><strong>Client–server vs. peer-to-peer</strong> — centralized services vs. equal sharing among peers</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 3. Network Reference Models & Transmission Media -->
+    <section id="models-media">
+      <h2 class="section-title"><span class="topic-num">3</span> Network Models &amp; Transmission Media</h2>
+      <div class="card">
+        <p>
+          Reference models divide network functions into <strong>layers</strong> so different
+          technologies can work together. The two most studied models are OSI (7 layers) and TCP/IP (4 layers).
+        </p>
+
+        <figure class="diagram" aria-label="OSI model layers">
+          <figcaption>OSI Reference Model (7 layers)</figcaption>
+          <div class="osi-stack">
+            <div class="osi-layer l7">7 — Application</div>
+            <div class="osi-layer l6">6 — Presentation</div>
+            <div class="osi-layer l5">5 — Session</div>
+            <div class="osi-layer l4">4 — Transport</div>
+            <div class="osi-layer l3">3 — Network</div>
+            <div class="osi-layer l2">2 — Data Link</div>
+            <div class="osi-layer l1">1 — Physical</div>
+          </div>
+        </figure>
+
+        <p style="margin-top: 1rem;">
+          <strong>TCP/IP model</strong> maps roughly to: Application (OSI 5–7), Transport (4),
+          Internet/Network (3), and Network Access (1–2).
+        </p>
+
+        <h3 class="card-subtitle">Transmission media</h3>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Medium</th>
+              <th>Examples</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Guided (wired)</td>
+              <td>Twisted pair, coaxial, fiber-optic</td>
+              <td>Fiber: high speed, long distance, immune to much EMI</td>
+            </tr>
+            <tr>
+              <td>Unguided (wireless)</td>
+              <td>Radio, microwave, infrared</td>
+              <td>No physical cable; affected by distance and obstacles</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 4. Satellite Communication Systems -->
+    <section id="satellite">
+      <h2 class="section-title"><span class="topic-num">4</span> Satellite Communication Systems</h2>
+      <div class="card">
+        <p>
+          Satellites act as <strong>relay stations in space</strong>, receiving signals from Earth
+          stations (uplink), amplifying them, and retransmitting (downlink) to other locations.
+          They extend communication where cables are impractical.
+        </p>
+        <h3 class="card-subtitle">Orbit types</h3>
+        <ul class="key-list">
+          <li><strong>GEO</strong> (Geostationary) — ~35,786 km; fixed position; used for TV and weather</li>
+          <li><strong>MEO</strong> (Medium Earth Orbit) — GPS navigation</li>
+          <li><strong>LEO</strong> (Low Earth Orbit) — ~500–2,000 km; lower delay; used by Starlink and similar systems</li>
+        </ul>
+        <h3 class="card-subtitle">Advantages &amp; challenges</h3>
+        <ul class="key-list">
+          <li>Wide coverage (especially GEO) for rural and remote areas</li>
+          <li>Higher latency than fiber, especially for GEO</li>
+          <li>Weather can affect certain frequency bands (rain fade on Ku/Ka band)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 5. Signals -->
+    <section id="signals">
+      <h2 class="section-title"><span class="topic-num">5</span> Signals</h2>
+      <div class="card">
+        <p>
+          In data communication, information is represented by <strong>signals</strong>—variations
+          in voltage, light, or electromagnetic waves over time.
+        </p>
+        <h3 class="card-subtitle">Analog vs. digital</h3>
+        <div class="info-grid">
+          <div class="info-box">
+            <strong>Analog</strong>
+            <p>Continuous waveform (e.g. traditional voice on a phone line). Sensitive to noise.</p>
+          </div>
+          <div class="info-box">
+            <strong>Digital</strong>
+            <p>Discrete values (0s and 1s). Easier to regenerate, encrypt, and detect errors.</p>
+          </div>
+        </div>
+        <h3 class="card-subtitle">Important concepts</h3>
+        <ul class="key-list">
+          <li><strong>Modulation</strong> — varying a carrier wave to carry data (AM, FM, PSK, QAM)</li>
+          <li><strong>Bandwidth</strong> — range of frequencies a channel can pass; limits data rate</li>
+          <li><strong>Sampling &amp; quantization</strong> — converting analog sound to digital (Nyquist theorem)</li>
+          <li><strong>Encoding</strong> — NRZ, Manchester, etc., representing bits on the medium</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 6. Wireless Networks and Technologies -->
+    <section id="wireless">
+      <h2 class="section-title"><span class="topic-num">6</span> Wireless Networks &amp; Technologies</h2>
+      <div class="card">
+        <p>
+          <strong>Wireless networking</strong> uses radio waves to connect devices without cables.
+          Standards define how devices associate, authenticate, and transfer data.
+        </p>
+        <h3 class="card-subtitle">Common technologies</h3>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Technology</th>
+              <th>Typical use</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Wi-Fi (IEEE 802.11)</td>
+              <td>LAN access in homes, campuses, offices</td>
+            </tr>
+            <tr>
+              <td>Bluetooth (IEEE 802.15)</td>
+              <td>Short-range PAN: headsets, keyboards, IoT</td>
+            </tr>
+            <tr>
+              <td>Cellular (4G LTE, 5G)</td>
+              <td>Mobile broadband over wide areas</td>
+            </tr>
+            <tr>
+              <td>NFC</td>
+              <td>Very short range: payments, pairing</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="card-subtitle">Wireless concerns</h3>
+        <ul class="key-list">
+          <li><strong>Coverage &amp; interference</strong> — walls, distance, and other radios affect quality</li>
+          <li><strong>Security</strong> — WPA2/WPA3 encryption; avoid open public Wi-Fi for sensitive data</li>
+          <li><strong>Standards bodies</strong> — IEEE, ITU, and industry groups define interoperable specs</li>
+        </ul>
+        <p class="topic-footer-note">
+          Topics 7–9 (Security, Telegraph) are covered on the
+          <a href="security.html">Security</a> and <a href="telegraph.html">Telegraph</a> pages.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Data Communication Assignment &copy; 2026 &mdash; AMO AIKINS JOSEPH (PUIT/24210041)</p>
+    <p style="margin-top: 0.5rem;">
+      <a href="resources.html">Resources</a> &middot;
+      <a href="https://github.com/josephaikins810-eng/data-communication" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+    </p>
+  </footer>
+
+</body>
+</html>
